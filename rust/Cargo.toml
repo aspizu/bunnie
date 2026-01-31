@@ -2,6 +2,12 @@
 name = "bunnie"
 version = "1.0.0"
 edition = "2024"
+authors = ["Priyanshu Dangare <aspizu@protonmail.com>"]
+description = "Use Bun as the template engine"
+license = "MIT"
+categories = ["template-engine"]
+homepage = "https://aspiz.uk/bunnie"
+repository = "https://github.com/aspizu/bunnie"
 
 [dependencies]
 reqwest = { version = "0.13.1", features = ["json"] }
