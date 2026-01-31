@@ -1,6 +1,14 @@
 {
     "name": "bunnie",
     "version": "1.0.0",
+    "homepage": "https://aspiz.uk/bunnie",
+    "author": {
+        "name": "Priyanshu Dangare",
+        "email": "aspizu@protonmail.com",
+        "url": "https://aspiz.uk/"
+    },
+    "repository": "https://github.com/aspizu/bunnie",
+    "license": "MIT",
     "type": "module",
     "description": "Use Bun as the templating engine",
     "main": "src/index.ts",
