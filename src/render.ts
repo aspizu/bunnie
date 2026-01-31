@@ -46,7 +46,14 @@ export function render(jsx: any): string {
     if (typeof jsx.type === "string") {
         const attributes = renderAttributes(jsx.props)
         const children = render(jsx.props?.children)
-        return `<${jsx.type}${attributes}>${children}</${jsx.type}>`
+        const element = `<${jsx.type}${attributes}>${children}</${jsx.type}>`
+
+        // Add DOCTYPE for html elements
+        if (jsx.type === "html") {
+            return `<!DOCTYPE html>${element}`
+        }
+
+        return element
     }
 
     // Handle components
