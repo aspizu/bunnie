@@ -1,0 +1,16 @@
+[project]
+name = "bunnie"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "Priyanshu Dangare", email = "aspizu@protonmail.com" }]
+requires-python = ">=3.14"
+dependencies = ["httpx>=0.28.1"]
+
+[project.optional-dependencies]
+msgspec = ["msgspec>=0.20.0"]
+pydantic = ["pydantic>=2.12.5"]
+
+[build-system]
+requires = ["uv_build>=0.10.2,<0.11.0"]
+build-backend = "uv_build"
